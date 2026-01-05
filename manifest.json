@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "CppReference C++98 Highlighter",
+    "version": "1.1",
+    "description": "Highlights C++98 safe functions and dims C++11+ ones.",
+    "icons": {
+       "48": "icon.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*.cppreference.com/*"],
+        "js": ["content.js"],
+        "css": ["styles.css"]
+      }
+    ],
+    "host_permissions": [
+        "*://*.cppreference.com/*"
+    ],
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "cppreference-made-better@myextension",
+        "strict_min_version": "109.0"
+      }
+    }
+}

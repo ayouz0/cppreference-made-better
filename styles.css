@@ -1,0 +1,19 @@
+.cpp98-safe {
+    background-color: rgba(46, 204, 113, 0.15) !important;
+    border-left: 4px solid #2ecc71 !important;
+}
+
+.cpp98-unsafe {
+    opacity: 0.4;
+    background-color: rgba(231, 76, 60, 0.1) !important;
+    border-left: 4px solid #e74c3c !important;
+    text-decoration: line-through;
+    transition: all 0.2s ease;
+}
+
+.cpp98-unsafe:hover {
+    opacity: 1;
+    text-decoration: none;
+    background-color: #fff !important;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
